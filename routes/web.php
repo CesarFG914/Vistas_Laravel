@@ -10,7 +10,12 @@ Route::get('/inicio',function(){
     return view('inicio');
 });
 
-Route::get('/home',[InicioController::class,'index']);
+Route::get('/home', [InicioController::class, 'index'])->name('home');
+Route::get('/Mexico', [InicioController::class, 'in'])->name('mexico');
+Route::get('/Alemania', [InicioController::class, 'i'])->name('alemania');
+Route::get('/Brasil', [InicioController::class, 'n'])->name('brasil');
+Route::get('/Argentina', [InicioController::class, 'd'])->name('argentina');
+Route::get('/Francia', [InicioController::class, 'e'])->name('francia');
 
 Route::get('/padilla',[InicioController::class,'dex2']);
 

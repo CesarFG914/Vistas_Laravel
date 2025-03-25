@@ -6,6 +6,6 @@
     <title>Practica2php</title>
 </head>
 <body>
-    
+        
 </body>
 </html>
