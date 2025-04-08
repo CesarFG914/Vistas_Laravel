@@ -17,6 +17,8 @@ Route::get('/Brasil', [InicioController::class, 'n'])->name('brasil');
 Route::get('/Argentina', [InicioController::class, 'd'])->name('argentina');
 Route::get('/Francia', [InicioController::class, 'e'])->name('francia');
 
+Route::get('/',[InicioController::class,'index'])->name('home');
+
 Route::get('/padilla',[InicioController::class,'dex2']);
 
 Route::get('/cesar',function(){

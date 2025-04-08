@@ -7,27 +7,28 @@ use Illuminate\Http\Request;
 class InicioController extends Controller
 {
     public function index(){
-        return view("home");
+        return view("home",["titulo"=>"home"]);
+        //return redirect()->route("/home");
     }
 
     public function in(){
-        return view("Mexico");
+        return view("Mexico",["titulo"=>"Mexico"]);
     }
 
     public function i(){
-        return view("Alemania");
+        return view("Alemania",["titulo"=>"Alemania"]);
     }
 
     public function n(){
-        return view("Brasil");
+        return view("Brasil",["titulo"=>"Brasil"]);
     }
 
     public function d(){
-        return view("Argentina");
+        return view("Argentina",["titulo"=>"Argentina"]);
     }
 
     public function e(){
-        return view("Francia");
+        return view("Francia",["titulo"=>"Francia"]);
     }
 
 
